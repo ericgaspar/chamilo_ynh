@@ -15,7 +15,7 @@ maintainers = ["eric_G"]
 license = "GPL-3.0"
 website = "https://chamilo.org "
 demo = "https://chamilo.org/fr/demo/"
-admindoc = "https://yunohost.org/packaging_apps"
+admindoc = "https://11.chamilo.org/documentation/installation_guide_fr_FR.html#"
 code = "https://github.com/chamilo/chamilo-lms"
 
 [integration]
