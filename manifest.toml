@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "chamilo"
 name = "Chamilo"
-description.en = "Learning management system focused on ease of use and accessibility "
-description.fr = "Expliquez en *quelques* (10~15) mots l'utilité de l'app ou ce qu'elle fait (l'objectif est de donner une idée grossière pour des utilisateurs qui naviguent dans un catalogue de 100+ apps)"
+description.en = "Learning management system focused on ease of use and accessibility"
+description.fr = "Système de gestion de l'apprentissage axé sur la facilité d'utilisation et l'accessibilité"
 
 version = "1.11.32~ynh1"
 
@@ -16,7 +16,6 @@ license = "GPL-3.0"
 website = "https://chamilo.org "
 demo = "https://chamilo.org/fr/demo/"
 admindoc = "https://yunohost.org/packaging_apps"
-userdoc = "https://yunohost.org/apps"
 code = "https://github.com/chamilo/chamilo-lms"
 
 [integration]
@@ -36,10 +35,6 @@ ram.runtime = "50M"
     [install.domain]
     type = "domain"
 
-    [install.path]
-    type = "path"
-    default = "/chamilo"
-
     [install.init_main_permission]
     type = "group"
     default = "visitors"
@@ -49,8 +44,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/chamilo/chamilo-lms/releases/download/v1.11.32/chamilo-1.11.32.tar.gz"
-    sha256 = "082f8ef713208bc8ba663b0881f8ce073d5c508071ed8728ecda9d3ac224c463"
+    url = "https://github.com/chamilo/chamilo-lms/releases/download/v2.0.0-alpha.2/chamilo-2.0.0-alpha.2.zip"
+    sha256 = "d2b225d870c38e3451058e35670f78a36a93f75737c73c3f990006791a85127e"
 
     autoupdate.strategy = "latest_github_tag"
 
@@ -62,7 +57,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "mariadb-server, php8.4-sqlite3, php8.4-curl, php8.4-intl, php8.4-mbstring, php8.4-xmlrpc, php8.4-mysql, php8.4-gd, php8.4-xml, php8.4-ldap, php8.4-apcu, php8.4-zip"
+    packages = "mariadb-server, php8.3-sqlite3, php8.4-curl, php8.4-intl, php8.4-mbstring, php8.4-xmlrpc, php8.4-mysql, php8.4-gd, php8.4-xml, php8.4-ldap, php8.4-apcu, php8.4-zip"
 
     [resources.database]
     type = "mysql"
